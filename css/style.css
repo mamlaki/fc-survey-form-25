@@ -59,6 +59,16 @@ header p {
     margin-bottom: 0;
 }
 
+header p a {
+    color: var(--coffee-secondary);
+    text-decoration: none;
+    transition: color 0.2s
+}
+
+header p a:hover {
+    color: var(--coffee-primary);
+}
+
 
 /* ====== FORM STYLES ====== */
 
