@@ -1,0 +1,60 @@
+:root {
+    /* ====== COLOUR SCHEME ====== */
+    --coffee-bg: #F7F3EF;
+    --coffee-card: #FFF8F0;
+    --coffee-primary: #6F4E37;
+    --coffee-secondary: #A67C52;
+    --coffee-accent: #D9B08C;
+    --coffee-dark: #3E2723;
+    --coffee-light: #FFF;
+    --coffee-border: #E0C9A6;
+    --coffee-shadow: 0 4px 24px rgba(111, 78, 55, 0.08);
+    --coffee-radius: 1rem;
+    --coffee-font: 'Helvetica Neue', 'Inter', Arial, sans-serif;
+}
+
+/* ====== BASE STYLES ====== */
+body {
+    display: flex;
+    flex-direction: column;   
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--coffee-font);
+    background: var(--coffee-bg);
+    color: var(--coffe-dark);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
+
+/* ====== HEADER STYLES ====== */
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--coffee-primary);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    gap: 0.25em;
+}
+
+header h1 i {
+    color: var(--coffee-secondary);
+    font-size: 2.3rem;
+}
+
+header p {
+    color: var(--coffee-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
