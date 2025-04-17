@@ -171,12 +171,19 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
+.footer-content a {
+    color: var(--coffee-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
 .footer-social-icon {
     font-size: 2rem;
     color: var(--coffee-primary);
     transition: color 0.2s;
 }
 
-.footer-social-icon:hover {
+.footer-social-icon:hover,
+.footer-content a:hover {
     color: var(--coffee-secondary);
 }
