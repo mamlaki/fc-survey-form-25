@@ -34,7 +34,7 @@
                 <label for="number" id="number-label" class="form-label">
                      <i class="fas fa-coffee"></i> How many cups of coffee do you drink per day?
                 </label>
-                <input type="number" id="number" class="form-input" min="0" max="9999999" placeholder="Enter cups per day" required>
+                <input type="number" id="number" class="form-input" min="0" max="9999999" placeholder="e.g., 1, 3, etc." required>
             </div>
             <!-- Select dropdown -->
             <div class="form-group">
@@ -59,24 +59,29 @@
                     <i class="fas fa-mug-hot"></i> How do you like your coffee? (choose one)
                 </p>
                 <label class="form-radio-label">
+                    <input type="radio" name="preference" id="black" value="black" required> 
                     <i class="fas fa-mug-saucer"></i>
-                    <input type="radio" name="preference" id="black" value="black" required> Black
+                    Black
                 </label>
                 <label class="form-radio-label">
+                    <input type="radio" name="preference" id="cream" value="cream" required> 
                     <i class="fas fa-cloud"></i>
-                    <input type="radio" name="preference" id="cream" value="cream" required> Cream
+                    Cream
                 </label>
                 <label class="form-radio-label">
+                    <input type="radio" name="preference" id="milk" value="milk" required> 
                     <i class="fas fa-glass-water"></i>
-                    <input type="radio" name="preference" id="milk" value="milk" required> Milk
+                    Milk
                 </label>
                 <label class="form-radio-label">
+                    <input type="radio" name="preference" id="cream-milk" value="cream-milk" required> 
                     <i class="fas fa-jug-detergent"></i>
-                    <input type="radio" name="preference" id="cream-milk" value="cream-milk" required> Cream and Milk
+                    Cream and Milk
                 </label>
                 <label class="form-radio-label">
+                    <input type="radio" name="preference" id="iced" value="iced" required> 
                     <i class="fas fa-ice-cream"></i>
-                    <input type="radio" name="preference" id="iced" value="iced" required> Iced
+                    Iced
                 </label>
             </div>
             <!-- Checkboxes -->
@@ -85,28 +90,35 @@
                     <i class="fas fa-spoon"></i> What flavours do you like? (if any)
                 </p>
                 <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="vanilla" value="vanilla" class="form-checkbox"> 
                     <i class="fas fa-leaf"></i>
-                    <input type="checkbox" name="flavour" id="vanilla" value="vanilla" class="form-checkbox"> Vanilla
+                    Vanilla
                 </label>
                 <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="caramel" value="caramel" class="form-checkbox">
                     <i class="fas fa-candy-cane"></i>
-                    <input type="checkbox" name="flavour" id="caramel" value="caramel" class="form-checkbox"> Caramel
+                    Caramel 
                 </label>
                 <label class="form-checkbox-label">
+                    
+                    <input type="checkbox" name="flavour" id="hazelnut" value="hazelnut" class="form-checkbox"> 
                     <i class="fas fa-seedling"></i>
-                    <input type="checkbox" name="flavour" id="hazelnut" value="hazelnut" class="form-checkbox"> Hazelnut
+                    Hazelnut
                 </label>
                 <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="pumpkin-spice" value="pumpkin-spice" class="form-checkbox"> 
                     <i class="fas fa-star"></i>
-                    <input type="checkbox" name="flavour" id="pumpkin-spice" value="pumpkin-spice" class="form-checkbox"> Pumpkin Spice
+                    Pumpkin Spice
                 </label>
                 <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="whipped-cream" value="whipped-cream" class="form-checkbox"> 
                     <i class="fas fa-cow"></i>
-                    <input type="checkbox" name="flavour" id="whipped-cream" value="whipped-cream" class="form-checkbox"> Whipped Cream
+                    Whipped Cream
                 </label>
                 <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="chocolate-syrup" value="chocolate-syrup" class="form-checkbox">
                     <i class="fas fa-cookie"></i>
-                    <input type="checkbox" name="flavour" id="chocolate-syrup" value="chocolate-syrup" class="form-checkbox"> Chocolate syrup
+                    Chocolate syrup 
                 </label>
             </div>
             <!-- Additional Comments -->

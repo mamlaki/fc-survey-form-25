@@ -6,10 +6,9 @@
     --coffee-secondary: #A67C52;
     --coffee-accent: #D9B08C;
     --coffee-dark: #3E2723;
-    --coffee-light: #FFF;
     --coffee-border: #E0C9A6;
     --coffee-shadow: 0 4px 24px rgba(111, 78, 55, 0.08);
-    --coffee-font: 'Helvetica Neue', 'Inter', Arial, sans-serif;
+    --coffee-font: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* ====== BASE STYLES ====== */
@@ -58,6 +57,8 @@ header p {
     margin-bottom: 0;
 }
 
+/* ====== FORM STYLES ====== */
+
 .survey-form {
     display: flex;
     flex-direction: column;
@@ -70,4 +71,89 @@ header p {
     border: 1px solid var(--coffee-border);
     border-radius: 9px;
     box-shadow: var(--coffee-shadow);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group:nth-of-type(7) {
+    margin: 0.3rem 0;
+    margin-top: 0.5rem;
+}
+
+.form-label,
+.form-radio-label,
+.form-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--coffee-dark);
+    font-weight: bold;
+}
+
+.form-radio-label,
+.form-checkbox-label {
+    font-weight: normal;
+    color: var(--coffee-primary);
+    margin-bottom: 0.20em;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 0.75em 1em;
+    border: 1px solid var(--coffee-border);
+    border-radius: 9px;
+    transition: border-color 0.2s;
+    margin-top: 0.20em;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--coffee-primary);
+}
+
+.form-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-radio-label i,
+.form-checkbox-label i {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--coffee-primary);
+    width: 1.1em;
+    height: 1.1em;
+    margin: auto 0.3em;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    accent-color: var(--coffee-secondary);
+}
+
+button[type="submit"] {
+    background-color: var(--coffee-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7em 2em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--coffee-secondary);
 }
