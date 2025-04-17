@@ -11,6 +11,7 @@
     --coffee-font: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 /* ====== BASE STYLES ====== */
 body {
     display: flex;
@@ -29,6 +30,7 @@ main {
     align-items: flex-start;
     padding: 2rem 1rem;
 }
+
 
 /* ====== HEADER STYLES ====== */
 header {
@@ -56,6 +58,7 @@ header p {
     font-size: 1.05rem;
     margin-bottom: 0;
 }
+
 
 /* ====== FORM STYLES ====== */
 
@@ -156,4 +159,24 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--coffee-secondary);
+}
+
+
+/* ====== FOOTER STYLES ====== */
+.footer {
+    color: var(--coffee-primary);
+    font-weight: bold;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.footer-social-icon {
+    font-size: 2rem;
+    color: var(--coffee-primary);
+    transition: color 0.2s;
+}
+
+.footer-social-icon:hover {
+    color: var(--coffee-secondary);
 }
