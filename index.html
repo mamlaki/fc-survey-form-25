@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-        <h1 id="title">freeCodeCamp Survey Form Project</h1>
+        <h1 id="title">
+            Coffee Survey
+        </h1>
         <p id="description">Part of the the freeCodeCamp cirriculum. Done for fun :-).</p>
     </header>
     <main>
@@ -24,45 +26,69 @@
                 <input name="email" type="email" id="email" class="form-input" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for="number" id="number-label" class="form-label">Age</label>
-                <input type="number" id="number" class="form-input" min="18" max="120" placeholder="Enter your age" required>
+                <label for="number" id="number-label" class="form-label">How many cups of coffee do you drink per day?</label>
+                <input type="number" id="number" class="form-input" min="0" max="9999999" placeholder="Enter cups per day" required>
             </div>
-            <!-- Select dropdown – not sure what the theme of this project is yet so placeholder content -->
+            <!-- Select dropdown -->
             <div class="form-group">
-                <label for="drodpown" class="form-label">Placeholder text</label>
+                <label for="drodpown" class="form-label">What's your preferred brewing method?</label>
                 <select name="untitled" id="dropdown" class="form-select">
                     <option value="">Select an option</option>
-                    <option value="...">...</option>
-                    <option value="...">...</option>
+                    <option value="aeropress">AeroPress</option>
+                    <option value="cold-brew">Cold Brew</option>
+                    <option value="drip">Drip</option>
+                    <option value="espresso-machine">Espresso Machine</option>
+                    <option value="french-press">French Press</option>
+                    <option value="percolator">Percolator</option>
+                    <option value="pour-over">Pour Over</option>
+                    <option value="turkish">Turkish</option>
                 </select>
             </div>
-            <!-- Radio buttons – not sure what the theme of this project is... -->
+            <!-- Radio buttons -->
             <div class="form-group">
-                <p class="form-label">Radio buttons</p>
+                <p class="form-label">How do you like your coffee? (choose one)</p>
                 <label class="form-radio-label">
-                    <input type="radio" name="..." id="..." value="place" required> Place
+                    <input type="radio" name="preference" id="black" value="black" required> Black
                 </label>
                 <label class="form-radio-label">
-                    <input type="radio" name="..." id="..." value="holder" required> Holder
+                    <input type="radio" name="preference" id="cream" value="cream" required> Cream
+                </label>
+                <label class="form-radio-label">
+                    <input type="radio" name="preference" id="milk" value="milk" required> Milk
+                </label>
+                <label class="form-radio-label">
+                    <input type="radio" name="preference" id="cream-milk" value="cream-milk" required> Cream and Milk
+                </label>
+                <label class="form-radio-label">
+                    <input type="radio" name="preference" id="iced" value="iced" required> Iced
                 </label>
             </div>
-            <!-- Checkboxes – not sure what the theme of this project is... -->
+            <!-- Checkboxes -->
             <div class="form-group">
-                <p class="form-label">Placeholder text</p>
+                <p class="form-label">What flavours do you like? (if any)</p>
                 <label class="form-checkbox-label">
-                    <input type="checkbox" name="placeholder" id="placeholder" value="place" class="form-checkbox"> Placeholder
+                    <input type="checkbox" name="flavour" id="vanilla" value="vanilla" class="form-checkbox"> Vanilla
                 </label>
                 <label class="form-checkbox-label">
-                    <input type="checkbox" name="placeholder" id="holder" value="holder" class="form-checkbox"> Placeholder
+                    <input type="checkbox" name="flavour" id="caramel" value="caramel" class="form-checkbox"> Caramel
                 </label>
                 <label class="form-checkbox-label">
-                    <input type="checkbox" name="placeholder" id="endcheck" value="endcheck" class="form-checkbox"> Placeholder
+                    <input type="checkbox" name="flavour" id="hazelnut" value="hazelnut" class="form-checkbox"> Hazelnut
+                </label>
+                <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="pumpkin-spice" value="pumpkin-spice" class="form-checkbox"> Pumpkin Spice
+                </label>
+                <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="whipped-cream" value="whipped-cream" class="form-checkbox"> Whipped Cream
+                </label>
+                <label class="form-checkbox-label">
+                    <input type="checkbox" name="flavour" id="chocolate-syrup" value="chocolate-syrup" class="form-checkbox"> Chocolate syrup
                 </label>
             </div>
             <!-- Additional Comments -->
              <div class="form-group">
-                <label for="comments" class="form-label">Additional comments</label>
-                <textarea name="comments" id="comments" class="form-textarea" placeholder="Enter your comments here"></textarea>
+                <label for="comments" class="form-label">When do you like to drink coffee?</label>
+                <textarea name="comments" id="comments" class="form-textarea" placeholder="e.g., on cold winter day"></textarea>
              </div>
             <!-- Submit -->
             <div class="form-group">
