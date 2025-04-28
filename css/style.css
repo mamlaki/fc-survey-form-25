@@ -11,6 +11,18 @@
     --coffee-font: 'Helvetica Neue', Arial, sans-serif;
 }
 
+::-webkit-input-placeholder {
+    color: #BFAE9C;
+}
+::-moz-placeholder {
+    color: #BFAE9C;
+}
+:-ms-input-placeholder {
+    color: #BFAE9C;
+}
+::placeholder {
+    color: #BFAE9C;
+}
 
 /* ====== BASE STYLES ====== */
 body {
