@@ -102,19 +102,29 @@ header h1 i {
 }
 
 header p {
-    color: #FFFFFF;
+    color: var(--coffee-dark);
     font-size: 1.05rem;
-    margin-bottom: 0;
+    text-shadow: 1px 2px 3px rgba(69, 39, 35, 0.2);
 }
 
-header p a {
-    color: #FFFFFF;
+header p a,
+.footer-content a {
+    color: var(--coffe-dark);
     text-decoration: none;
-    transition: color 0.2s
+    transition: color, background-color, padding, font-weight, text-decoration;
+    transition-duration: 0.2s;
+    border-radius: 9px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
-header p a:hover {
-    color: var(--coffee-primary);
+header p a:hover,
+.footer-content a:hover {
+    background-color: var(--coffee-dark);
+    color: var(--coffee-bg);
+    padding: 6px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -222,28 +232,23 @@ button[type="submit"]:hover {
 
 /* ====== FOOTER STYLES ====== */
 .footer {
-    color: #FFFFFF;
+    color: var(--coffee-dark);
     font-weight: bold;
     padding: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.footer-content a {
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
 .footer-social-icon {
     font-size: 2rem;
-    color: #FFFFFF;
-    transition: color 0.2s;
+    color: var(--coffee-dark);
+    transition: color, transform;
+    transition-duration: 0.2s;
 }
 
-.footer-social-icon:hover,
-.footer-content a:hover {
+.footer-social-icon:hover {
     color: var(--coffee-secondary);
+    transform: scale(1.1);
 }
 
 
