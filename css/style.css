@@ -16,6 +16,7 @@ body[data-theme="dark"] {
     --coffee-bg: #2B1E1A;
     --coffee-card: #3E2723;
     --coffee-primary: #D9B08C;
+    --coffee-secondary: #C9B097;
     --coffee-accent: #A67C52;
     --coffee-dark: #F7F3EF;
     --coffee-border: #5A3D34;
@@ -121,21 +122,15 @@ header p {
 header p a,
 .footer-content a {
     color: var(--coffee-dark);
+    transition: border-color 0.2s;
     text-decoration: none;
-    transition: color, background-color, padding, font-weight, text-decoration;
-    transition-duration: 0.2s;
-    border-radius: 9px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
 }
 
 header p a:hover,
 .footer-content a:hover {
-    background-color: var(--coffee-dark);
-    color: var(--coffee-bg);
-    padding: 6px;
-    font-weight: bold;
-    text-decoration: none;
+    border-color: currentColor;
 }
 
 .theme-switch-wrapper {
@@ -307,7 +302,7 @@ button[type="submit"]:hover {
 /* ====== FOOTER STYLES ====== */
 .footer {
     color: var(--coffee-dark);
-    font-weight: bold;
+    text-shadow: 1px 2px 3px rgba(69, 39, 35, 0.2);
     padding: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
