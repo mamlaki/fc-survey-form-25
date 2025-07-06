@@ -69,7 +69,7 @@ body {
     margin: 0;
     font-family: var(--coffee-font);
     background-color: var(--coffee-bg);
-    color: var(--coffe-dark);
+    color: var(--coffee-dark);
 }
 
 main {
@@ -120,7 +120,7 @@ header p {
 
 header p a,
 .footer-content a {
-    color: var(--coffe-dark);
+    color: var(--coffee-dark);
     text-decoration: none;
     transition: color, background-color, padding, font-weight, text-decoration;
     transition-duration: 0.2s;
